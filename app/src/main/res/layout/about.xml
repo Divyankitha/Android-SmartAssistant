@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Interact with 3D Tree"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="normal|bold"
+        android:textSize="25dp"
+        android:layout_weight="0.01" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/textView10"
+        android:textSize="25dp"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:text="Following is the information of the 3D tree with which you will be interacting!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView26"
+        android:textStyle="normal|bold"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView25" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/about_display"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:text="Simulate the interaction between smart phone and 3 D tree!" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/textView12" />
+
+    <Button
+        android:text="Click to Connect!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_weight="0.01"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffff" />
+
+    <TextView
+        android:text="Submitted By,"
+        android:layout_width="match_parent"
+        android:id="@+id/textView13"
+        android:layout_height="30dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Divyankitha Mahesh Urs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="011457524"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/textView16" />
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/textView20"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:layout_height="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView21"
+        android:text="About the scanned 3D Tree"
+        android:textSize="20dp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/blank"
+        android:textSize="20dp"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/displayResult"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_weight="0.93" />
+</LinearLayout>

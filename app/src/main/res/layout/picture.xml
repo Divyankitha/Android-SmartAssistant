@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="Capture Picture/Video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textView11"
+        android:textSize="25dp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:text="Video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:onClick="takeVideo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button3"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffff" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="175dp"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        android:id="@+id/imageDisplay"
+        android:layout_below="@+id/textView11"
+        android:layout_alignStart="@+id/videoView" />
+
+    <Button
+        android:text="Picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:onClick="takePicture"
+        android:layout_below="@+id/imageDisplay"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffff" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="300dp"
+        android:layout_height="175dp"
+        android:layout_above="@+id/button4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:text="Your Video will display here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView22"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp" />
+
+</RelativeLayout>

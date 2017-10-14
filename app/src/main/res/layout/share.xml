@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="Share Content On Social Media"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/textView23"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp" />
+
+    <ImageView
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        android:id="@+id/imageShare"
+        android:layout_width="300dp"
+        android:layout_below="@+id/button5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="300dp" />
+
+    <Button
+        android:text="Select picture/video to share"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/button5"
+        android:onClick="shareDisplay"
+        android:layout_below="@+id/textView23"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:layout_width="300dp" />
+
+    <Button
+        android:text="Share"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        android:onClick="shareSocial"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:layout_width="100dp" />
+
+</RelativeLayout>
