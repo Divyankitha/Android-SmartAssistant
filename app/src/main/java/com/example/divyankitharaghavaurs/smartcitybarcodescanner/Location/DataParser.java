@@ -1,4 +1,4 @@
-package com.example.divyankitharaghavaurs.smartcitybarcodescanner;
+package com.example.divyankitharaghavaurs.smartcitybarcodescanner.Location;
 
 /**
  * Created by divyankithaRaghavaUrs on 9/19/17.

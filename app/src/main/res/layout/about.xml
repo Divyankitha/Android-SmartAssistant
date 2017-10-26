@@ -57,7 +57,8 @@
         android:id="@+id/button2"
         android:layout_weight="0.01"
         android:background="@color/colorPrimaryDark"
-        android:textColor="#ffff" />
+        android:textColor="#ffff"
+        android:onClick="gotoScan" />
 
     <TextView
         android:text="Submitted By,"

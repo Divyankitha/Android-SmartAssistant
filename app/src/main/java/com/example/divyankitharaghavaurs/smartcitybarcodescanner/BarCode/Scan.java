@@ -1,4 +1,4 @@
-package com.example.divyankitharaghavaurs.smartcitybarcodescanner;
+package com.example.divyankitharaghavaurs.smartcitybarcodescanner.BarCode;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -10,6 +10,8 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.divyankitharaghavaurs.smartcitybarcodescanner.R;
 
 /**
  * Created by divyankithaRaghavaUrs on 8/29/17.

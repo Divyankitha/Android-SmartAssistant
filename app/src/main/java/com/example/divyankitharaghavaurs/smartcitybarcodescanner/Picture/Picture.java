@@ -1,4 +1,4 @@
-package com.example.divyankitharaghavaurs.smartcitybarcodescanner;
+package com.example.divyankitharaghavaurs.smartcitybarcodescanner.Picture;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.VideoView;
+
+import com.example.divyankitharaghavaurs.smartcitybarcodescanner.R;
 
 import java.io.File;
 
@@ -32,7 +34,8 @@ public class Picture extends AppCompatActivity //Activity to click picture and r
 
     }
 
-    public void takePicture(View V) {
+    public void takePicture(View V) //Capturing image using device camera and saving into gallery
+    {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (takePictureIntent.resolveActivity(getPackageManager()) != null)
         {
@@ -65,7 +68,7 @@ public class Picture extends AppCompatActivity //Activity to click picture and r
 
     }
 
-    public void takeVideo(View v)
+    public void takeVideo(View v) //Capturing video using device's camera and saving into gallery
     {
         Intent takeVideoIntent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
         if (takeVideoIntent.resolveActivity(getPackageManager()) != null)

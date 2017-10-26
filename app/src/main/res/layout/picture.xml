@@ -54,13 +54,22 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="12dp" />
 
+    <ImageView
+        app:srcCompat="@drawable/video"
+        android:id="@+id/imageView2"
+        android:layout_alignTop="@+id/videoView"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_marginTop="32dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
     <TextView
         android:text="Your Video will display here"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView22"
-        android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp" />
+        android:layout_marginBottom="18dp"
+        android:layout_alignBottom="@+id/videoView"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

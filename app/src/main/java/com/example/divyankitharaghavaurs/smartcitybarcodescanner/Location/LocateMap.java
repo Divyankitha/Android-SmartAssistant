@@ -1,4 +1,4 @@
-package com.example.divyankitharaghavaurs.smartcitybarcodescanner;
+package com.example.divyankitharaghavaurs.smartcitybarcodescanner.Location;
 
 import android.Manifest;
 import android.content.Context;
@@ -14,7 +14,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
+import com.example.divyankitharaghavaurs.smartcitybarcodescanner.R;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -45,7 +45,6 @@ public class LocateMap extends AppCompatActivity implements OnMapReadyCallback /
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.location);
-
         MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 

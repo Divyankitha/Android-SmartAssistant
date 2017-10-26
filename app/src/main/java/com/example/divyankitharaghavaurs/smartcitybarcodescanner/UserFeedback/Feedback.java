@@ -1,4 +1,4 @@
-package com.example.divyankitharaghavaurs.smartcitybarcodescanner;
+package com.example.divyankitharaghavaurs.smartcitybarcodescanner.UserFeedback;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,6 +8,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.divyankitharaghavaurs.smartcitybarcodescanner.Database.database;
+import com.example.divyankitharaghavaurs.smartcitybarcodescanner.HomePage.Dashboard;
+import com.example.divyankitharaghavaurs.smartcitybarcodescanner.R;
 
 /**
  * Created by divyankithaRaghavaUrs on 8/29/17.
@@ -50,13 +54,13 @@ public class Feedback extends AppCompatActivity //This activity is used to obtin
     {
         EditText comment =(EditText)findViewById(R.id.comment);
         EditText rating = (EditText)findViewById(R.id.rating);
-        boolean result = mydb.insertFeedback(comment.getText().toString(), rating.getText().toString());
+        boolean result = mydb.insertFeedback(comment.getText().toString(), rating.getText().toString()); //Calling insert DB function
         if(result)
         {
             Log.d("Debug -->", "result =" + result);
             Toast.makeText(Feedback.this,"Submitted your feedback, Thank you!", Toast.LENGTH_LONG).show();
 
-            Intent intent = new Intent(Feedback.this, HomePage.class);
+            Intent intent = new Intent(Feedback.this, Dashboard.class);
             startActivity(intent);
 
         }

@@ -1,9 +1,12 @@
-package com.example.divyankitharaghavaurs.smartcitybarcodescanner;
+package com.example.divyankitharaghavaurs.smartcitybarcodescanner.BarCode;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.divyankitharaghavaurs.smartcitybarcodescanner.R;
 
 /**
  * Created by divyankithaRaghavaUrs on 8/29/17.
@@ -70,6 +73,12 @@ public class About extends AppCompatActivity
     protected void onDestroy()
     {
         super.onDestroy();
+    }
+
+    public void gotoScan(View V)
+    {
+        Intent i=new Intent(About.this,Scan.class);
+        startActivity(i);
     }
 
     public void finishAboutUs(View v)

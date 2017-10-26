@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView33"
+        android:layout_alignStart="@+id/DisplayUname"
+        android:id="@+id/Email"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:text="   Your Profile!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView27"
+        android:textStyle="normal|bold"
+        android:textColor="@color/black"
+        android:layout_weight="0.03"
+        android:textSize="25dp"
+        android:layout_marginTop="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView29" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_height="wrap_content"
+        android:id="@+id/FirstName"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="200dp"
+        android:layout_alignBaseline="@+id/textView29"
+        android:layout_alignBottom="@+id/textView29"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/LastName"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignBaseline="@+id/textView31"
+        android:layout_alignBottom="@+id/textView31"
+        android:layout_alignStart="@+id/FirstName"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/DisplayUname"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignBaseline="@+id/textView35"
+        android:layout_alignBottom="@+id/textView35"
+        android:layout_alignStart="@+id/LastName"
+        android:textAlignment="textStart" />
+
+    <Button
+        android:text="Sign out!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button7"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffff"
+        android:onClick="signout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="    Username :"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView35"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="26dp"
+        android:textAlignment="textEnd"
+        android:layout_below="@+id/textView31"
+        android:layout_toStartOf="@+id/DisplayUname"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:text="    Last Name :"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView31"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="26dp"
+        android:textAlignment="textEnd"
+        android:layout_below="@+id/textView29"
+        android:layout_alignEnd="@+id/textView35" />
+
+    <TextView
+        android:text="    First Name :"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView29"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="38dp"
+        android:textAlignment="textEnd"
+        android:layout_below="@+id/textView27"
+        android:layout_alignEnd="@+id/textView31" />
+
+    <TextView
+        android:text="    Email :"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView33"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginTop="24dp"
+        android:textAlignment="textEnd"
+        android:layout_below="@+id/textView35"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,4 +1,4 @@
-package com.example.divyankitharaghavaurs.smartcitybarcodescanner;
+package com.example.divyankitharaghavaurs.smartcitybarcodescanner.Share;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,11 +13,13 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ShareActionProvider;
 
+import com.example.divyankitharaghavaurs.smartcitybarcodescanner.R;
+
 /**
  * Created by divyankithaRaghavaUrs on 8/29/17.
  */
 
-public class Share extends AppCompatActivity //This activity is used to provide the share on social media feature
+public class SharePicVideo extends AppCompatActivity //This activity is used to provide the share on social media feature
 {
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -55,30 +57,7 @@ public class Share extends AppCompatActivity //This activity is used to provide 
 
     }
 
-    /*private ShareActionProvider mShareActionProvider;
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate menu resource file.
-        getMenuInflater().inflate(R.menu.share_menu, menu);
-
-        // Locate MenuItem with ShareActionProvider
-        MenuItem item = menu.findItem(R.id.menu_item_share);
-
-        // Fetch and store ShareActionProvider
-        mShareActionProvider = (ShareActionProvider) item.getActionProvider();
-
-        // Return true to display menu
-        return true;
-    }
-
-    // Call to update the share intent
-    private void setShareIntent(Intent shareIntent) {
-        if (mShareActionProvider != null) {
-            mShareActionProvider.setShareIntent(shareIntent);
-        }
-    }*/
-    public void shareSocial(View v)
+    public void shareSocial(View v) //Function to share image/video on social media
     {
         System.out.println("Inside share function");
         Intent sharingIntent = new Intent(Intent.ACTION_SEND);

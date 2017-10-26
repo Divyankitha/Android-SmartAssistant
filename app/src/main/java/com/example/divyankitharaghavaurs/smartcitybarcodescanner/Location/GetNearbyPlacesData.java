@@ -1,4 +1,4 @@
-package com.example.divyankitharaghavaurs.smartcitybarcodescanner;
+package com.example.divyankitharaghavaurs.smartcitybarcodescanner.Location;
 
 /**
  * Created by divyankithaRaghavaUrs on 9/19/17.
@@ -6,7 +6,6 @@ package com.example.divyankitharaghavaurs.smartcitybarcodescanner;
 
 import android.os.AsyncTask;
 import android.util.Log;
-
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;

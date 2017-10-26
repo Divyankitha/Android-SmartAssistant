@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.divyankitharaghavaurs.smartcitybarcodescanner.HomePage.Dashboard;
+
 public class MainActivity extends AppCompatActivity //Opening page activity
 {
     @Override
@@ -16,7 +18,7 @@ public class MainActivity extends AppCompatActivity //Opening page activity
 
     public void gotoHomePage(View V)
     {
-        Intent intent = new Intent(MainActivity.this, HomePage.class);
+        Intent intent = new Intent(MainActivity.this, Dashboard.class);
         startActivity(intent);
     }
 }
